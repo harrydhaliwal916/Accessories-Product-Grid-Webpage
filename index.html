@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Accessory Product Grid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-color: rgb(39, 59, 109);
+        color: white; 
+        font-family: 'Limelight', serif; 
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .accessories-product-container {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        padding: 30px 0; 
+        margin: 10px 10px; 
+        background-color: wheat;
+    }
+
+    .accessories-product-card {
+        flex: 1;
+        text-align: center;
+        color: black;
+        font-size: large;
+        max-width: 500px;
+        padding: 20px;
+        margin: 10px;
+        border: 10px solid;
+        border-radius: 5px;
+        align-content: center;
+    }
+
+    .responsive-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .price {
+        font-size: 2rem;
+        font-weight: bold;
+        border: 25px solid;
+        border-color: rgb(39, 59, 109);
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .product-features {
+        list-style: none;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .buy-button {
+        background-color: wheat;
+        font-family: 'Limelight', serif;
+        font-weight: bold;
+        color: black; 
+        border: 5px solid rgb(39, 59, 109);
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .buy-button:hover {
+        color: black;
+        background-color: lightblue;
+        cursor: pointer;
+    }
+
+
+
+@media (max-width: 500px) {
+    .accessories-product-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buy-button {
+        font-size: .9rem;
+        padding: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+    <h1>Pangean Wear Accessories</h1>
+    <p>Check out the latest accessories</p>
+
+    <div class="accessories-product-container">
+        <div class="accessories-product-card">
+            <img src="./Pangean_Wear_Images/blackbackpack.jpeg" alt="A Black Pangean Wear backpack" class="responsive-img">
+            <p class="product-title">Pangean Wear Backpack</p>
+             <p>Always have roots on your back</p>
+         <div class="price">$125</div>
+            <ul class="product-features">
+                <li>💯 Vegan Leather</li>
+                 <li>💪🏽 Durable</li>
+                <li>⏳ Timeless Fashion</li>
+          </ul>
+        <button class="buy-button">BUY</button>
+        </div>
+
+        <div class="accessories-product-card">
+               <img src="./Pangean_Wear_Images/gloves.jpeg" alt="Black Pangean Wear gloves" class="responsive-img">
+               <p class="product-title">Pangean Wear Gloves</p>
+               <p>Stay warm with your roots</p>
+              <div class="price">$55</div>
+              <ul class="product-features">
+                    <li>💯 Vegan Leather</li>
+                    <li>💪🏽 Durable</li>
+                 <li>🧤Touchscreen friendly </li>
+                </ul>
+                <button class="buy-button">BUY</button>
+            </div>
+
+           <div class="accessories-product-card">
+                <img src="./Pangean_Wear_Images/hat.jpeg" alt="Red felt Pangean Wear hat" class="responsive-img">
+                 <p class="product-title">Pangean Wear Hat</p>
+                <p>Always stay with your roots</p>
+            <div class="price">$75</div>
+                <ul class="product-features">
+                <li>💯 Felt</li>
+                <li>💪🏽 Durable</li>
+                <li>🎩 Fashionable</li>
+             </ul>
+             <button class="buy-button">BUY</button>
+        </div>
+    </div>
+    </body>
+</html>
